@@ -1,1 +1,191 @@
-<h1>Hello world</h1>
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mijn Uitgebreide Website</title>
+    <style>
+        /* Algemene stijlen */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background: #0078d7;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        /* Navigatie */
+        nav {
+            background: #005bb5;
+            display: flex;
+            justify-content: center;
+            padding: 0.5rem 0;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main content */
+        main {
+            padding: 2rem;
+        }
+
+        section {
+            margin-bottom: 3rem;
+        }
+
+        section h2 {
+            margin-bottom: 1rem;
+            color: #005bb5;
+        }
+
+        /* Galerij */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Contactformulier */
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 1rem;
+            background: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        .contact-form button {
+            background: #0078d7;
+            color: #fff;
+            padding: 0.7rem 1.5rem;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background: #005bb5;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welkom op Mijn Website</h1>
+        <p>Een plek waar je alles over mij en mijn werk kunt ontdekken!</p>
+    </header>
+    <nav>
+        <a href="#over">Over</a>
+        <a href="#diensten">Diensten</a>
+        <a href="#galerij">Galerij</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <main>
+        <!-- Over sectie -->
+        <section id="over">
+            <h2>Over Mij</h2>
+            <p>Ik ben een gepassioneerde webontwikkelaar met een liefde voor design en technologie. Mijn doel is om gebruiksvriendelijke en visueel aantrekkelijke websites te maken.</p>
+        </section>
+
+        <!-- Diensten sectie -->
+        <section id="diensten">
+            <h2>Diensten</h2>
+            <ul>
+                <li>Webontwikkeling: van idee tot live website.</li>
+                <li>Grafisch ontwerp: logo's, branding en meer.</li>
+                <li>Technisch advies: verbeter de prestaties van je website.</li>
+            </ul>
+        </section>
+
+        <!-- Galerij sectie -->
+        <section id="galerij">
+            <h2>Galerij</h2>
+            <div class="gallery">
+                <img src="https://via.placeholder.com/300" alt="Voorbeeld afbeelding 1">
+                <img src="https://via.placeholder.com/300" alt="Voorbeeld afbeelding 2">
+                <img src="https://via.placeholder.com/300" alt="Voorbeeld afbeelding 3">
+                <img src="https://via.placeholder.com/300" alt="Voorbeeld afbeelding 4">
+            </div>
+        </section>
+
+        <!-- Contact sectie -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Heb je een vraag of wil je samenwerken? Vul onderstaand formulier in en ik neem contact met je op!</p>
+            <form class="contact-form" action="https://example.com/form-handler" method="post">
+                <label for="naam">Naam</label>
+                <input type="text" id="naam" name="naam" required>
+                
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="bericht">Bericht</label>
+                <textarea id="bericht" name="bericht" rows="5" required></textarea>
+                
+                <button type="submit">Verstuur</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        &copy; 2024 Mijn Website - Gemaakt met passie.
+    </footer>
+</body>
+</html>
